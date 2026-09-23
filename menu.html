@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SugarWagon | Sweet Menu</title>
+
+    <meta
+      name="description"
+      content="Explore the SugarWagon menu featuring freshly spun cotton candy, warm funnel cakes, signature toppings, drinks and sweet combinations."
+    />
+
+    <meta
+      name="keywords"
+      content="SugarWagon menu, cotton candy, funnel cakes, dessert food truck, sweet treats, drinks"
+    />
+
+    <meta name="author" content="SugarWagon" />
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+
+    <link rel="stylesheet" href="./main/global.css" />
+    <link rel="stylesheet" href="./main/main.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">
+          <a
+            href="index.html"
+            class="logo-icon-link"
+            aria-label="SugarWagon Home"
+          >
+            <img
+              src="./images/logo.png"
+              alt="SugarWagon Food Truck Logo"
+              class="brand-logo"
+              id="headerLogo"
+            />
+          </a>
+
+          <span class="logo-divider"></span>
+
+          <a href="index.html" class="sugarwagon-brand header-brand">
+            <div class="brand-name">
+              <span class="brand-sugar">Sugar</span>
+              <span class="brand-wagon">Wagon</span>
+
+              <span class="brand-swoosh"></span>
+
+              <span class="brand-heart">
+                <span class="heart-line"></span>
+                <span class="heart-shape">♡</span>
+              </span>
+            </div>
+
+            <div class="brand-description">
+              <span class="description-line"></span>
+
+              <span class="description-text">
+                COTTON CANDY &amp; FUNNEL CAKE
+              </span>
+
+              <span class="description-line"></span>
+            </div>
+
+            <span class="brand-type">FOOD TRUCK</span>
+          </a>
+        </div>
+
+        <nav class="navbar" aria-label="Main navigation">
+          <ul class="nav-links" id="navLinks">
+            <li class="dropdown">
+              <a
+                href="index.html"
+                class="dropdown-trigger"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span>Home</span>
+                <i data-lucide="chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <span class="dropdown-icon">
+                      <i data-lucide="house"></i>
+                    </span>
+
+                    <span class="dropdown-content">
+                      <strong>Home 1</strong>
+                      <small>Classic SugarWagon</small>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <span class="dropdown-icon">
+                      <i data-lucide="sparkles"></i>
+                    </span>
+
+                    <span class="dropdown-content">
+                      <strong>Home 2</strong>
+                      <small>Premium Experience</small>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="our-story.html" class="active">Our Story</a>
+            </li>
+
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+
+            <li>
+              <a href="locations.html">Locations</a>
+            </li>
+
+            <li>
+              <a href="events.html">Events</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="mobile-quote">
+            <a href="contact.html" class="btn-primary">
+              <i data-lucide="calendar-days"></i>
+              <span>Book the Truck</span>
+            </a>
+          </div>
+        </nav>
+
+        <div class="header-buttons">
+          <button
+            class="icon-btn rtl-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <button
+            class="icon-btn dark-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <a href="contact.html" class="btn-primary desktop-quote">
+            <i data-lucide="calendar-days"></i>
+            <span>Book the Truck</span>
+          </a>
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="menu-hero">
+      <div class="menu-hero__overlay"></div>
+
+      <div class="menu-hero__content">
+        <div class="section-eyebrow menu-hero__eyebrow">
+          <span class="section-eyebrow__line"></span>
+          <span class="section-eyebrow__text">Our Sweet Menu</span>
+          <span class="section-eyebrow__line"></span>
+        </div>
+
+        <h1 class="menu-hero__title">
+          <span>Sweet Treats.</span>
+          <span>Happy Moments.</span>
+        </h1>
+
+        <p class="menu-hero__description">
+          From clouds of freshly spun cotton candy to warm golden funnel cakes,
+          every SugarWagon favorite is made to bring a little extra happiness to
+          your day.
+        </p>
+
+        <div class="menu-hero__actions">
+          <a href="#full-menu" class="btn-primary">
+            <span>Explore Our Menu</span>
+            <i data-lucide="arrow-down"></i>
+          </a>
+
+          <a href="locations.html" class="menu-hero__secondary">
+            <i data-lucide="map-pin"></i>
+            <span>Find the Truck</span>
+          </a>
+        </div>
+
+        <div class="menu-hero__details">
+          <div>
+            <i data-lucide="sparkles"></i>
+            <span>Made Fresh</span>
+          </div>
+
+          <span class="menu-hero__detail-line"></span>
+
+          <div>
+            <i data-lucide="heart"></i>
+            <span>Made With Joy</span>
+          </div>
+
+          <span class="menu-hero__detail-line"></span>
+
+          <div>
+            <i data-lucide="truck"></i>
+            <span>Served On Wheels</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-favorites">
+      <div class="menu-container">
+        <div class="favorites-heading">
+          <div class="section-eyebrow section-eyebrow--left">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">SugarWagon Favorites</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <div class="favorites-heading__row">
+            <h2 class="section-heading section-heading--left">
+              <span>Start With Our</span>
+              <span>Signature Sweets</span>
+            </h2>
+
+            <p>
+              The treats our guests keep coming back for — playful, nostalgic
+              and made fresh at the SugarWagon window.
+            </p>
+          </div>
+        </div>
+
+        <div class="favorites-showcase">
+          <article class="favorite-feature">
+            <img
+              src="./images/strawberry.png"
+              alt="SugarWagon signature strawberry funnel cake"
+            />
+
+            <div class="favorite-feature__shade"></div>
+
+            <span class="favorite-feature__badge">
+              <i data-lucide="star"></i>
+              Wagon Favorite
+            </span>
+
+            <div class="favorite-feature__content">
+              <span>Signature Funnel Cake</span>
+
+              <h3>Strawberry Dream</h3>
+
+              <p>
+                Warm funnel cake layered with powdered sugar, fresh
+                strawberries, strawberry drizzle and a cloud of whipped cream.
+              </p>
+
+              <div class="favorite-feature__bottom">
+                <strong>$9.50</strong>
+
+                <a href="#full-menu">
+                  View Menu
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="favorite-list">
+            <article class="favorite-item">
+              <div class="favorite-item__image">
+                <img
+                  src="./images/classic.png"
+                  alt="Classic SugarWagon funnel cake"
+                />
+              </div>
+
+              <div class="favorite-item__content">
+                <div>
+                  <span>Funnel Cake</span>
+                  <strong>Classic Golden</strong>
+                </div>
+
+                <p>
+                  Freshly fried and finished with a generous snowfall of
+                  powdered sugar.
+                </p>
+
+                <span class="favorite-item__price">$7.00</span>
+              </div>
+            </article>
+
+            <article class="favorite-item">
+              <div class="favorite-item__image">
+                <img src="./images/pink.png" alt="Pink vanilla cotton candy" />
+              </div>
+
+              <div class="favorite-item__content">
+                <div>
+                  <span>Cotton Candy</span>
+                  <strong>Pink Cloud</strong>
+                </div>
+
+                <p>
+                  Light, fluffy pink vanilla cotton candy spun fresh at the
+                  window.
+                </p>
+
+                <span class="favorite-item__price">$5.00</span>
+              </div>
+            </article>
+
+            <article class="favorite-item">
+              <div class="favorite-item__image">
+                <img src="./images/chocolate.png" alt="Chocolate funnel cake" />
+              </div>
+
+              <div class="favorite-item__content">
+                <div>
+                  <span>Loaded Favorite</span>
+                  <strong>Chocolate Bliss</strong>
+                </div>
+
+                <p>
+                  Warm funnel cake with chocolate drizzle, cookie crumble and
+                  whipped cream.
+                </p>
+
+                <span class="favorite-item__price">$9.00</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-menu" id="full-menu">
+      <div class="menu-container">
+        <div class="menu-heading">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">Explore The Menu</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <h2 class="section-heading">
+            <span>Pick Your</span>
+            <span>Sweet Favorite</span>
+          </h2>
+
+          <p class="section-intro">
+            Browse our cotton candy, warm funnel cakes, refreshing drinks and
+            little extras made for the perfect SugarWagon stop.
+          </p>
+        </div>
+
+        <div class="menu-tabs" role="tablist">
+          <button class="menu-tab active" type="button" data-category="all">
+            <i data-lucide="layout-grid"></i>
+            <span>All Treats</span>
+          </button>
+
+          <button class="menu-tab" type="button" data-category="cotton-candy">
+            <i data-lucide="cloud"></i>
+            <span>Cotton Candy</span>
+          </button>
+
+          <button class="menu-tab" type="button" data-category="funnel-cakes">
+            <i data-lucide="cake-slice"></i>
+            <span>Funnel Cakes</span>
+          </button>
+
+          <button class="menu-tab" type="button" data-category="drinks">
+            <i data-lucide="cup-soda"></i>
+            <span>Drinks</span>
+          </button>
+
+          <button class="menu-tab" type="button" data-category="extras">
+            <i data-lucide="plus"></i>
+            <span>Extras</span>
+          </button>
+        </div>
+
+        <div class="menu-products">
+          <article class="menu-product" data-menu-category="cotton-candy">
+            <div class="menu-product__image">
+              <img src="./images/pink.png" alt="Pink vanilla cotton candy" />
+
+              <span class="menu-product__tag">Popular</span>
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Pink Vanilla</h3>
+                <strong>$5.00</strong>
+              </div>
+
+              <p>
+                Our classic fluffy pink vanilla cloud, freshly spun to order.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="cotton-candy">
+            <div class="menu-product__image">
+              <img src="./images/blue.avif" alt="Blue raspberry cotton candy" />
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Blue Raspberry</h3>
+                <strong>$5.00</strong>
+              </div>
+
+              <p>
+                A bright blue cloud with a playful sweet-and-tangy berry flavor.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="funnel-cakes">
+            <div class="menu-product__image">
+              <img
+                src="./images/classic.png"
+                alt="Classic powdered sugar funnel cake"
+              />
+
+              <span class="menu-product__tag menu-product__tag--gold">
+                Classic
+              </span>
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Classic Golden</h3>
+                <strong>$7.00</strong>
+              </div>
+
+              <p>
+                Warm golden funnel cake finished simply with powdered sugar.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="funnel-cakes">
+            <div class="menu-product__image">
+              <img
+                src="./images/strawberry.png"
+                alt="Strawberry dream funnel cake"
+              />
+
+              <span class="menu-product__tag">Favorite</span>
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Strawberry Dream</h3>
+                <strong>$9.50</strong>
+              </div>
+
+              <p>
+                Strawberries, powdered sugar, strawberry drizzle and whipped
+                cream.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="funnel-cakes">
+            <div class="menu-product__image">
+              <img
+                src="./images/chocolate.png"
+                alt="Chocolate bliss funnel cake"
+              />
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Chocolate Bliss</h3>
+                <strong>$9.00</strong>
+              </div>
+
+              <p>
+                Chocolate drizzle, cookie crumble, powdered sugar and whipped
+                cream.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="drinks">
+            <div class="menu-product__image">
+              <img
+                src="./images/Fresh strawberry lemonade.avif"
+                alt="Fresh strawberry lemonade"
+              />
+
+              <span class="menu-product__tag menu-product__tag--gold">
+                Refreshing
+              </span>
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Berry Lemonade</h3>
+                <strong>$4.50</strong>
+              </div>
+
+              <p>Chilled lemonade blended with sweet strawberry flavor.</p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="drinks">
+            <div class="menu-product__image">
+              <img
+                src="./images/SugarWagon pink lemonade.avif"
+                alt="SugarWagon pink lemonade"
+              />
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Pink Lemonade</h3>
+                <strong>$4.00</strong>
+              </div>
+
+              <p>
+                Sweet, citrusy and ice-cold — a classic partner for warm sweets.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-product" data-menu-category="extras">
+            <div class="menu-product__image">
+              <img
+                src="./images/toppings1.webp"
+                alt="Assorted funnel cake toppings"
+              />
+            </div>
+
+            <div class="menu-product__content">
+              <div class="menu-product__title">
+                <h3>Extra Toppings</h3>
+                <strong>+$1.00</strong>
+              </div>
+
+              <p>
+                Add sauces, whipped cream, fruit, cookie crumble or sprinkles.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="build-cake">
+      <div class="menu-container">
+        <div class="build-heading">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">Make It Yours</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <h2 class="section-heading">
+            <span>Build Your Own</span>
+            <span>Funnel Cake</span>
+          </h2>
+
+          <p class="section-intro">
+            Start with our warm golden funnel cake and turn it into your perfect
+            SugarWagon creation in four simple steps.
+          </p>
+        </div>
+
+        <div class="build-process">
+          <div class="build-process__line"></div>
+
+          <article class="build-step">
+            <span class="build-step__number">01</span>
+
+            <div class="build-step__marker">
+              <i data-lucide="cake-slice"></i>
+            </div>
+
+            <span class="build-step__mini">Start Here</span>
+
+            <h3>Choose Your Base</h3>
+
+            <p>
+              Begin with a freshly fried golden funnel cake, warm and crisp
+              around the edges.
+            </p>
+          </article>
+
+          <article class="build-step">
+            <span class="build-step__number">02</span>
+
+            <div class="build-step__marker">
+              <i data-lucide="waves"></i>
+            </div>
+
+            <span class="build-step__mini">Drizzle It</span>
+
+            <h3>Pick a Sauce</h3>
+
+            <p>
+              Choose chocolate, strawberry or caramel for an extra layer of
+              sweetness.
+            </p>
+          </article>
+
+          <article class="build-step">
+            <span class="build-step__number">03</span>
+
+            <div class="build-step__marker">
+              <i data-lucide="sparkles"></i>
+            </div>
+
+            <span class="build-step__mini">Load It Up</span>
+
+            <h3>Add Toppings</h3>
+
+            <p>
+              Add strawberries, cookie crumble, sprinkles or other rotating
+              SugarWagon favorites.
+            </p>
+          </article>
+
+          <article class="build-step">
+            <span class="build-step__number">04</span>
+
+            <div class="build-step__marker">
+              <i data-lucide="heart"></i>
+            </div>
+
+            <span class="build-step__mini">Final Touch</span>
+
+            <h3>Finish It Off</h3>
+
+            <p>
+              Complete your creation with powdered sugar and a cloud of whipped
+              cream.
+            </p>
+          </article>
+        </div>
+
+        <div class="build-note">
+          <span></span>
+
+          <div>
+            <i data-lucide="chef-hat"></i>
+            <strong>Your creation. Our fresh-made goodness.</strong>
+          </div>
+
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="flavor-section">
+      <div class="menu-container flavor-layout">
+        <div class="flavor-visual">
+          <div class="flavor-visual__shape"></div>
+
+          <div class="flavor-visual__image">
+            <img
+              src="./images/cotton candy.png"
+              alt="Colorful SugarWagon cotton candy flavors"
+            />
+          </div>
+
+          <div class="flavor-visual__seal">
+            <i data-lucide="cloud"></i>
+            <strong>Spun Fresh</strong>
+            <span>At the wagon</span>
+          </div>
+
+          <div class="flavor-visual__dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="flavor-content">
+          <div class="section-eyebrow section-eyebrow--left">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">Clouds Of Flavor</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <h2 class="section-heading section-heading--left">
+            <span>Find Your Cotton</span>
+            <span>Candy Flavor</span>
+          </h2>
+
+          <p class="flavor-content__intro">
+            Soft, colorful and freshly spun at the SugarWagon window. Pick a
+            classic favorite or discover a rotating seasonal flavor.
+          </p>
+
+          <div class="flavor-list">
+            <div class="flavor-option">
+              <span class="flavor-option__dot"></span>
+
+              <div>
+                <strong>Pink Vanilla</strong>
+                <span>Classic · Soft · Sweet</span>
+              </div>
+            </div>
+
+            <div class="flavor-option">
+              <span class="flavor-option__dot"></span>
+
+              <div>
+                <strong>Blue Raspberry</strong>
+                <span>Berry · Bright · Playful</span>
+              </div>
+            </div>
+
+            <div class="flavor-option">
+              <span class="flavor-option__dot"></span>
+
+              <div>
+                <strong>Strawberry</strong>
+                <span>Fruity · Sweet · Familiar</span>
+              </div>
+            </div>
+
+            <div class="flavor-option">
+              <span class="flavor-option__dot"></span>
+
+              <div>
+                <strong>Grape</strong>
+                <span>Bold · Juicy · Fun</span>
+              </div>
+            </div>
+
+            <div class="flavor-option">
+              <span class="flavor-option__dot"></span>
+
+              <div>
+                <strong>Birthday Cake</strong>
+                <span>Celebration · Vanilla · Sweet</span>
+              </div>
+            </div>
+
+            <div class="flavor-option">
+              <span class="flavor-option__dot"></span>
+
+              <div>
+                <strong>Seasonal Swirl</strong>
+                <span>Limited · Rotating · Surprise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flavor-tip">
+            <i data-lucide="sparkles"></i>
+
+            <p>Ask at the window about today's seasonal cotton candy flavor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pairings-section">
+      <div class="menu-container">
+        <div class="pairings-heading">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">Better Together</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <h2 class="section-heading">
+            <span>Our Sweetest</span>
+            <span>Pairings</span>
+          </h2>
+
+          <p class="section-intro">
+            A little of this, a little of that — SugarWagon combinations made
+            for sharing, celebrating or treating yourself.
+          </p>
+        </div>
+
+        <div class="pairings-layout">
+          <article class="pairing-main">
+            <img
+              src="./images/pairing.png"
+              alt="Funnel cake and cotton candy pairing"
+            />
+
+            <div class="pairing-main__overlay"></div>
+
+            <div class="pairing-main__content">
+              <span class="pairing-label">The Classic</span>
+
+              <h3>Fairground Pair</h3>
+
+              <p>
+                One classic funnel cake paired with a freshly spun cotton candy
+                cloud.
+              </p>
+
+              <div>
+                <strong>$11.00</strong>
+                <span>Perfect for two</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="pairing-side">
+            <article class="pairing-row">
+              <div class="pairing-row__image">
+                <img
+                  src="./images/Fresh strawberry lemonade.avif"
+                  alt="Funnel cake with drinks"
+                />
+              </div>
+
+              <div class="pairing-row__content">
+                <span>Share Together</span>
+                <h3>Share the Sweetness</h3>
+
+                <p>Loaded funnel cake plus two refreshing drinks.</p>
+
+                <div>
+                  <strong>$16.00</strong>
+                  <i data-lucide="heart"></i>
+                </div>
+              </div>
+            </article>
+
+            <article class="pairing-row">
+              <div class="pairing-row__image">
+                <img
+                  src="./images/toppings.avif"
+                  alt="Assorted SugarWagon celebration treats"
+                />
+              </div>
+
+              <div class="pairing-row__content">
+                <span>For The Crew</span>
+                <h3>Celebration Box</h3>
+
+                <p>A shareable mix of sweet favorites for the whole group.</p>
+
+                <div>
+                  <strong>From $24.00</strong>
+                  <i data-lucide="party-popper"></i>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="pairings-note">
+          Pairing availability may vary by stop and event.
+        </p>
+      </div>
+    </section>
+
+    <section class="menu-cta-section">
+      <div class="menu-container">
+        <div class="menu-cta">
+          <div class="menu-cta__visual">
+            <img
+              src="./images/celebrations.png"
+              alt="SugarWagon dessert food truck at a celebration"
+            />
+
+            <div class="menu-cta__visual-overlay"></div>
+
+            <div class="menu-cta__seal">
+              <i data-lucide="heart"></i>
+              <strong>Made for</strong>
+              <span>Sweet Moments</span>
+            </div>
+          </div>
+
+          <div class="menu-cta__content">
+            <div class="section-eyebrow section-eyebrow--left">
+              <span class="section-eyebrow__line"></span>
+              <span class="section-eyebrow__text">Sweets On Wheels</span>
+              <span class="section-eyebrow__line"></span>
+            </div>
+
+            <h2 class="section-heading section-heading--left">
+              <span>Make Your Celebration</span>
+              <span>a Little Sweeter</span>
+            </h2>
+
+            <p>
+              Bring SugarWagon to birthdays, festivals, school celebrations,
+              community gatherings and private events for a sweet experience
+              your guests will remember.
+            </p>
+
+            <div class="menu-cta__features">
+              <div>
+                <i data-lucide="party-popper"></i>
+                <span>Private Events</span>
+              </div>
+
+              <div>
+                <i data-lucide="users-round"></i>
+                <span>Community Events</span>
+              </div>
+
+              <div>
+                <i data-lucide="map-pin"></i>
+                <span>Local Stops</span>
+              </div>
+            </div>
+
+            <div class="menu-cta__actions">
+              <a href="contact.html" class="btn-primary">
+                <i data-lucide="calendar-days"></i>
+                <span>Book the Truck</span>
+              </a>
+
+              <a href="locations.html" class="btn-secondary">
+                <i data-lucide="map-pin"></i>
+                <span>Find Our Next Stop</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <a
+              href="index.html"
+              class="logo-icon-link"
+              aria-label="SugarWagon Home"
+            >
+              <img
+                src="./images/logo.png"
+                alt="SugarWagon Food Truck Logo"
+                class="brand-logo"
+                id="footerLogo"
+              />
+            </a>
+
+            <span class="logo-divider footer-logo-divider"></span>
+
+            <a href="index.html" class="sugarwagon-brand footer-brand">
+              <div class="brand-name">
+                <span class="brand-sugar">Sugar</span>
+                <span class="brand-wagon">Wagon</span>
+
+                <span class="brand-swoosh"></span>
+
+                <span class="brand-heart">
+                  <span class="heart-line"></span>
+                  <span class="heart-shape">♡</span>
+                </span>
+              </div>
+
+              <div class="brand-description">
+                <span class="description-line"></span>
+
+                <span class="description-text">
+                  COTTON CANDY &amp; FUNNEL CAKE
+                </span>
+
+                <span class="description-line"></span>
+              </div>
+
+              <span class="brand-type">FOOD TRUCK</span>
+            </a>
+          </div>
+
+          <p class="footer-about">
+            SugarWagon brings freshly spun cotton candy, warm funnel cakes and
+            feel-good sweet treats on the road for local stops, festivals,
+            celebrations and special events.
+          </p>
+
+          <div class="social">
+            <a href="#" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="#" aria-label="Social Media">
+              <i data-lucide="music-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Sweet Treats</h3>
+
+          <ul class="footer-links">
+            <li><a href="menu.html#cotton-candy">Cotton Candy</a></li>
+            <li><a href="menu.html#funnel-cakes">Funnel Cakes</a></li>
+            <li><a href="menu.html#toppings">Toppings</a></li>
+            <li><a href="menu.html#drinks">Drinks</a></li>
+            <li><a href="menu.html#specials">SugarWagon Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Find &amp; Celebrate</h3>
+
+          <ul class="footer-links">
+            <li><a href="locations.html">Find the Truck</a></li>
+            <li><a href="locations.html#upcoming-stops">Upcoming Stops</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="events.html#private-events">Private Events</a></li>
+            <li><a href="contact.html">Book SugarWagon</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+
+          <ul class="contact">
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="map-pin"></i>
+              </span>
+
+              <span>Follow our locations for today's stop</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="phone"></i>
+              </span>
+
+              <span>+1 (000) 000-0000</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="mail"></i>
+              </span>
+
+              <span>hello@sugarwagon.com</span>
+            </li>
+          </ul>
+
+          <a href="contact.html" class="btn-primary footer-quote">
+            <span>Book the Truck</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SugarWagon. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+
+          <a href="#" class="top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      });
+    </script>
+    <script src="./main/main.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Locations | SugarWagon</title>
+
+  <meta
+    name="description"
+    content="Find SugarWagon today and discover our upcoming food truck stops, local events and sweet destinations."
+  >
+
+  <link rel="icon" type="image/png" href="./images/logo.png">
+
+  <link rel="stylesheet" href="./main/global.css">
+  <link rel="stylesheet" href="./main/main.css">
+  <link rel="stylesheet" href="locations.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <div class="logo">
+        <a
+          href="index.html"
+          class="logo-icon-link"
+          aria-label="SugarWagon Home"
+        >
+          <img
+            src="./images/logo.png"
+            alt="SugarWagon Food Truck Logo"
+            class="brand-logo"
+            id="headerLogo"
+          >
+        </a>
+
+        <span class="logo-divider"></span>
+
+        <a href="index.html" class="sugarwagon-brand header-brand">
+          <div class="brand-name">
+            <span class="brand-sugar">Sugar</span>
+            <span class="brand-wagon">Wagon</span>
+            <span class="brand-swoosh"></span>
+
+            <span class="brand-heart">
+              <span class="heart-line"></span>
+              <span class="heart-shape">♡</span>
+            </span>
+          </div>
+
+          <div class="brand-description">
+            <span class="description-line"></span>
+            <span class="description-text">
+              COTTON CANDY &amp; FUNNEL CAKE
+            </span>
+            <span class="description-line"></span>
+          </div>
+
+          <span class="brand-type">FOOD TRUCK</span>
+        </a>
+      </div>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+
+          <li class="dropdown">
+            <a
+              href="index.html"
+              class="dropdown-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Home</span>
+              <i data-lucide="chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html">
+                  <span class="dropdown-icon">
+                    <i data-lucide="house"></i>
+                  </span>
+
+                  <span class="dropdown-content">
+                    <strong>Home 1</strong>
+                    <small>Classic SugarWagon</small>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="home2.html">
+                  <span class="dropdown-icon">
+                    <i data-lucide="sparkles"></i>
+                  </span>
+
+                  <span class="dropdown-content">
+                    <strong>Home 2</strong>
+                    <small>Premium Experience</small>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="our-story.html">Our Story</a>
+          </li>
+
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+
+          <li>
+            <a href="locations.html" class="active">Locations</a>
+          </li>
+
+          <li>
+            <a href="events.html">Events</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="mobile-quote">
+          <a href="contact.html" class="btn-primary">
+            <i data-lucide="calendar-days"></i>
+            <span>Book the Truck</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header-buttons">
+
+        <button
+          class="icon-btn rtl-btn"
+          id="rtlToggle"
+          type="button"
+          aria-label="Toggle RTL mode"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+          class="icon-btn dark-btn"
+          id="darkToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+
+        <a href="contact.html" class="btn-primary desktop-quote">
+          <i data-lucide="calendar-days"></i>
+          <span>Book the Truck</span>
+        </a>
+
+        <button
+          class="icon-btn menu-btn"
+          id="menuToggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+
+  <section class="locations-hero">
+
+    <div class="locations-hero__overlay"></div>
+
+    <div class="locations-hero__content">
+
+      <div class="section-eyebrow locations-hero__eyebrow">
+        <span class="section-eyebrow__line"></span>
+        <span class="section-eyebrow__text">Find SugarWagon</span>
+        <span class="section-eyebrow__line"></span>
+      </div>
+
+      <h1 class="locations-hero__title">
+        <span>Sweet Treats Are</span>
+        <span>Closer Than You Think</span>
+      </h1>
+
+      <p class="locations-hero__description">
+        Follow SugarWagon on the road, see where we're serving today and
+        discover the next stops where fresh cotton candy and warm funnel
+        cakes will be waiting.
+      </p>
+
+      <div class="locations-hero__actions">
+
+        <a href="#todays-stop" class="btn-primary">
+          <i data-lucide="map-pin"></i>
+          <span>Find Today's Stop</span>
+        </a>
+
+        <a href="#upcoming-stops" class="locations-hero__secondary">
+          <span>Upcoming Stops</span>
+          <i data-lucide="arrow-down"></i>
+        </a>
+
+      </div>
+
+      <div class="locations-hero__details">
+
+        <div>
+          <i data-lucide="truck"></i>
+          <span>On The Road</span>
+        </div>
+
+        <span class="locations-hero__divider"></span>
+
+        <div>
+          <i data-lucide="map-pin"></i>
+          <span>Local Stops</span>
+        </div>
+
+        <span class="locations-hero__divider"></span>
+
+        <div>
+          <i data-lucide="heart"></i>
+          <span>Sweet Moments</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="today-stop" id="todays-stop">
+
+    <div class="locations-container">
+
+      <div class="today-stop__heading">
+
+        <div class="section-eyebrow">
+          <span class="section-eyebrow__line"></span>
+          <span class="section-eyebrow__text">Today's Stop</span>
+          <span class="section-eyebrow__line"></span>
+        </div>
+
+        <h2 class="section-heading">
+          <span>Come Find</span>
+          <span>SugarWagon Today</span>
+        </h2>
+
+        <p class="section-intro">
+          We're rolling into another sweet stop. Come find the pink wagon,
+          say hello and enjoy your SugarWagon favorites fresh from the window.
+        </p>
+
+      </div>
+
+
+      <div class="today-stop__layout">
+
+        <div class="today-stop__visual">
+
+          <img
+            src="./images/location.png"
+            alt="SugarWagon food truck at today's location"
+          >
+
+          <div class="today-stop__visual-shade"></div>
+
+          <div class="today-stop__status">
+            <span class="today-stop__status-dot"></span>
+
+            <div>
+              <strong>Serving Today</strong>
+              <span>Come say hello</span>
+            </div>
+          </div>
+
+          <div class="today-stop__pin">
+            <i data-lucide="map-pin"></i>
+          </div>
+
+        </div>
+
+
+        <div class="today-stop__content">
+
+          <span class="today-stop__mini">
+            Today's SugarWagon Location
+          </span>
+
+          <h3>Riverside Community Park</h3>
+
+          <p class="today-stop__description">
+            Find SugarWagon parked near the main community area and enjoy
+            freshly spun cotton candy, warm funnel cakes and refreshing
+            drinks while you spend the evening with us.
+          </p>
+
+
+          <div class="today-stop__information">
+
+            <div class="today-info">
+              <span class="today-info__icon">
+                <i data-lucide="map-pin"></i>
+              </span>
+
+              <div>
+                <span>Location</span>
+                <strong>Riverside Community Park</strong>
+                <small>125 Riverside Drive</small>
+              </div>
+            </div>
+
+
+            <div class="today-info">
+              <span class="today-info__icon">
+                <i data-lucide="calendar-days"></i>
+              </span>
+
+              <div>
+                <span>Date</span>
+                <strong>Wednesday, September 23</strong>
+                <small>Today's scheduled stop</small>
+              </div>
+            </div>
+
+
+            <div class="today-info">
+              <span class="today-info__icon">
+                <i data-lucide="clock-3"></i>
+              </span>
+
+              <div>
+                <span>Serving Hours</span>
+                <strong>4:00 PM – 9:00 PM</strong>
+                <small>While supplies last</small>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="today-stop__note">
+            <i data-lucide="sparkles"></i>
+
+            <p>
+              Look for the pink SugarWagon and the sweet smell of freshly
+              made funnel cakes.
+            </p>
+          </div>
+
+
+          <div class="today-stop__actions">
+
+            <a href="#" class="btn-primary">
+              <i data-lucide="navigation"></i>
+              <span>Get Directions</span>
+            </a>
+
+            <a href="menu.html" class="btn-secondary">
+              <span>View Menu</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="upcoming-stops" id="upcoming-stops">
+
+    <div class="locations-container">
+
+      <div class="upcoming-stops__heading">
+
+        <div>
+
+          <div class="section-eyebrow section-eyebrow--left">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">Where We're Headed</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <h2 class="section-heading section-heading--left">
+            <span>Catch Us at Our</span>
+            <span>Next Stops</span>
+          </h2>
+
+        </div>
+
+        <p>
+          SugarWagon is always on the move. Save the date and catch us at
+          one of our upcoming community stops, markets and celebrations.
+        </p>
+
+      </div>
+
+
+      <div class="stops-schedule">
+
+        <article class="stop-row">
+
+          <div class="stop-row__date">
+            <span>SEP</span>
+            <strong>25</strong>
+          </div>
+
+          <div class="stop-row__line">
+            <span></span>
+          </div>
+
+          <div class="stop-row__main">
+            <span>Thursday Evening</span>
+            <h3>Downtown Night Market</h3>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="clock-3"></i>
+
+            <div>
+              <span>Serving Time</span>
+              <strong>5:00 PM – 10:00 PM</strong>
+            </div>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="map-pin"></i>
+
+            <div>
+              <span>Location</span>
+              <strong>Market Square</strong>
+            </div>
+          </div>
+
+          <a href="#" class="stop-row__direction" aria-label="Get directions">
+            <span>Directions</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+        </article>
+
+
+        <article class="stop-row">
+
+          <div class="stop-row__date">
+            <span>SEP</span>
+            <strong>27</strong>
+          </div>
+
+          <div class="stop-row__line">
+            <span></span>
+          </div>
+
+          <div class="stop-row__main">
+            <span>Saturday</span>
+            <h3>Family Fun Festival</h3>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="clock-3"></i>
+
+            <div>
+              <span>Serving Time</span>
+              <strong>12:00 PM – 7:00 PM</strong>
+            </div>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="map-pin"></i>
+
+            <div>
+              <span>Location</span>
+              <strong>Riverside Park</strong>
+            </div>
+          </div>
+
+          <a href="#" class="stop-row__direction" aria-label="Get directions">
+            <span>Directions</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+        </article>
+
+
+        <article class="stop-row">
+
+          <div class="stop-row__date">
+            <span>OCT</span>
+            <strong>02</strong>
+          </div>
+
+          <div class="stop-row__line">
+            <span></span>
+          </div>
+
+          <div class="stop-row__main">
+            <span>Friday Evening</span>
+            <h3>Community Food Night</h3>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="clock-3"></i>
+
+            <div>
+              <span>Serving Time</span>
+              <strong>4:00 PM – 9:00 PM</strong>
+            </div>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="map-pin"></i>
+
+            <div>
+              <span>Location</span>
+              <strong>Central Plaza</strong>
+            </div>
+          </div>
+
+          <a href="#" class="stop-row__direction" aria-label="Get directions">
+            <span>Directions</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+        </article>
+
+
+        <article class="stop-row">
+
+          <div class="stop-row__date">
+            <span>OCT</span>
+            <strong>05</strong>
+          </div>
+
+          <div class="stop-row__line">
+            <span></span>
+          </div>
+
+          <div class="stop-row__main">
+            <span>Sunday</span>
+            <h3>Sunday Sweet Stop</h3>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="clock-3"></i>
+
+            <div>
+              <span>Serving Time</span>
+              <strong>1:00 PM – 6:00 PM</strong>
+            </div>
+          </div>
+
+          <div class="stop-row__detail">
+            <i data-lucide="map-pin"></i>
+
+            <div>
+              <span>Location</span>
+              <strong>Lakeside Park</strong>
+            </div>
+          </div>
+
+          <a href="#" class="stop-row__direction" aria-label="Get directions">
+            <span>Directions</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+        </article>
+
+      </div>
+
+
+      <div class="upcoming-stops__bottom">
+
+        <span></span>
+
+        <div>
+          <i data-lucide="truck"></i>
+          <p>More sweet stops are always on the way.</p>
+        </div>
+
+        <span></span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="locations-cta-section">
+
+    <div class="locations-container">
+
+      <div class="locations-cta">
+
+        <div class="locations-cta__content">
+
+          <div class="section-eyebrow section-eyebrow--left">
+            <span class="section-eyebrow__line"></span>
+            <span class="section-eyebrow__text">Bring the Wagon to You</span>
+            <span class="section-eyebrow__line"></span>
+          </div>
+
+          <h2 class="section-heading section-heading--left">
+            <span>Want SugarWagon at</span>
+            <span>Your Next Celebration?</span>
+          </h2>
+
+          <p>
+            From birthdays and school events to festivals, corporate
+            gatherings and community celebrations, bring the SugarWagon
+            experience directly to your guests.
+          </p>
+
+
+          <div class="locations-cta__features">
+
+            <div>
+              <i data-lucide="party-popper"></i>
+              <span>Private Celebrations</span>
+            </div>
+
+            <div>
+              <i data-lucide="school"></i>
+              <span>School Events</span>
+            </div>
+
+            <div>
+              <i data-lucide="users-round"></i>
+              <span>Community Events</span>
+            </div>
+
+          </div>
+
+
+          <div class="locations-cta__actions">
+
+            <a href="contact.html" class="btn-primary">
+              <i data-lucide="calendar-days"></i>
+              <span>Book the Truck</span>
+            </a>
+
+            <a href="contact.html" class="btn-secondary">
+              <span>Contact Us</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="locations-cta__visual">
+
+          <img
+            src="./images/location2.png"
+            alt="SugarWagon food truck serving guests at a celebration"
+          >
+
+          <div class="locations-cta__visual-overlay"></div>
+
+
+          <div class="locations-cta__badge">
+
+            <div class="locations-cta__badge-icon">
+              <i data-lucide="heart"></i>
+            </div>
+
+            <div>
+              <span>We Bring</span>
+              <strong>The Sweetness</strong>
+              <small>Right to your celebration</small>
+            </div>
+
+          </div>
+
+
+          <div class="locations-cta__pin">
+            <i data-lucide="map-pin"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col footer-brand-col">
+
+        <div class="footer-logo">
+
+          <a
+            href="index.html"
+            class="logo-icon-link"
+            aria-label="SugarWagon Home"
+          >
+            <img
+              src="./images/logo.png"
+              alt="SugarWagon Food Truck Logo"
+              class="brand-logo"
+              id="footerLogo"
+            >
+          </a>
+
+          <span class="logo-divider footer-logo-divider"></span>
+
+          <a href="index.html" class="sugarwagon-brand footer-brand">
+
+            <div class="brand-name">
+              <span class="brand-sugar">Sugar</span>
+              <span class="brand-wagon">Wagon</span>
+              <span class="brand-swoosh"></span>
+
+              <span class="brand-heart">
+                <span class="heart-line"></span>
+                <span class="heart-shape">♡</span>
+              </span>
+            </div>
+
+            <div class="brand-description">
+              <span class="description-line"></span>
+
+              <span class="description-text">
+                COTTON CANDY &amp; FUNNEL CAKE
+              </span>
+
+              <span class="description-line"></span>
+            </div>
+
+            <span class="brand-type">FOOD TRUCK</span>
+
+          </a>
+
+        </div>
+
+        <p class="footer-about">
+          SugarWagon brings freshly spun cotton candy, warm funnel cakes and
+          feel-good sweet treats on the road for local stops, festivals,
+          celebrations and special events.
+        </p>
+
+        <div class="social">
+
+          <a href="#" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+          </a>
+
+          <a href="#" aria-label="Social Media">
+            <i data-lucide="music-2"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Quick Links</h3>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Sweet Treats</h3>
+
+        <ul class="footer-links">
+          <li><a href="menu.html">Cotton Candy</a></li>
+          <li><a href="menu.html">Funnel Cakes</a></li>
+          <li><a href="menu.html">Toppings</a></li>
+          <li><a href="menu.html">Drinks</a></li>
+          <li><a href="menu.html">SugarWagon Specials</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Find &amp; Celebrate</h3>
+
+        <ul class="footer-links">
+          <li><a href="#todays-stop">Find the Truck</a></li>
+          <li><a href="#upcoming-stops">Upcoming Stops</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="events.html">Private Events</a></li>
+          <li><a href="contact.html">Book SugarWagon</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Contact Us</h3>
+
+        <ul class="contact">
+
+          <li>
+            <span class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </span>
+
+            <span>Follow our locations for today's stop</span>
+          </li>
+
+          <li>
+            <span class="contact-icon">
+              <i data-lucide="phone"></i>
+            </span>
+
+            <span>+1 (000) 000-0000</span>
+          </li>
+
+          <li>
+            <span class="contact-icon">
+              <i data-lucide="mail"></i>
+            </span>
+
+            <span>hello@sugarwagon.com</span>
+          </li>
+
+        </ul>
+
+        <a href="contact.html" class="btn-primary footer-quote">
+          <span>Book the Truck</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>&copy; 2026 SugarWagon. All Rights Reserved.</p>
+
+      <div class="footer-bottom-links">
+
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+
+        <a href="#" class="top-btn" aria-label="Back to top">
+          <i data-lucide="arrow-up"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+  <script src="./main/main.js"></script>
+
+</body>
+</html>

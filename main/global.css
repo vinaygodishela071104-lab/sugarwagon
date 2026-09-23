@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700&display=swap");
+:root {
+  --primary: #ce5580;
+  --secondary: #d79421;
+
+  --text: #2b1b22;
+  --muted: #75636b;
+
+  --background: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: #fff7fa;
+  --border: #f1dce4;
+
+  --white: #ffffff;
+  --danger: #d9534f;
+  --danger-dark: #b52b27;
+
+  --heading-font: "Lobster", cursive;
+  --body-font: "Montserrat", sans-serif;
+
+  --body-font-size: 1rem;
+  --nav-font-size: 0.9rem;
+  --button-font-size: 0.88rem;
+
+  --body-font-weight: 500;
+  --nav-font-weight: 600;
+  --button-font-weight: 600;
+  --heading-font-weight: 400;
+
+  --line-height: 1.7;
+
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 40px;
+  --radius-round: 50%;
+
+  --transition: all 0.3s ease;
+  --theme-transition: background-color 0.35s ease, color 0.35s ease;
+
+  --shadow-soft: 0 8px 24px rgba(245, 54, 120, 0.08);
+  --shadow-dropdown: 0 18px 40px rgba(43, 27, 34, 0.12);
+  --shadow-panel: 0 20px 45px rgba(43, 27, 34, 0.16);
+  --shadow-secondary: 0 12px 22px rgba(215, 148, 33, 0.25);
+
+  --primary-btn-bg: var(--primary);
+  --primary-btn-color: var(--white);
+  --primary-btn-hover-bg: var(--secondary);
+  --primary-btn-border: transparent;
+
+  --secondary-btn-bg: transparent;
+  --secondary-btn-color: var(--primary);
+  --secondary-btn-hover-bg: var(--primary);
+  --secondary-btn-hover-color: var(--white);
+  --secondary-btn-border: var(--primary);
+}
+
+body.dark-mode {
+  --text: #ffffff;
+  --muted: #c9bbc1;
+
+  --background: #160d11;
+  --surface: #211319;
+  --surface-alt: #2b1820;
+  --border: rgba(255, 255, 255, 0.09);
+
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-dropdown: 0 18px 40px rgba(0, 0, 0, 0.3);
+  --shadow-panel: 0 20px 45px rgba(0, 0, 0, 0.38);
+
+  --secondary-btn-color: var(--white);
+  --secondary-btn-border: rgba(255, 255, 255, 0.18);
+  --secondary-btn-hover-bg: var(--primary);
+  --secondary-btn-hover-color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--line-height);
+  transition: var(--theme-transition);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--text);
+  font-weight: var(--heading-font-weight);
+}
+
+p,
+a,
+li,
+label,
+input,
+textarea,
+select,
+option,
+button,
+span {
+  font-family: var(--body-font);
+}
+
+p {
+  color: var(--muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 19px;
+  border: 1px solid var(--primary-btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-color);
+  font-family: var(--body-font);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--primary-btn-hover-bg);
+  color: var(--primary-btn-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-secondary);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 19px;
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-color);
+  font-family: var(--body-font);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-btn-hover-bg);
+  color: var(--secondary-btn-hover-color);
+  border-color: var(--secondary-btn-hover-bg);
+  transform: translateY(-3px);
+}
