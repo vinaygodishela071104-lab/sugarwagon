@@ -301,7 +301,7 @@ body {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 16px);
+  top: calc(100% + 2px);
   left: 50%;
   z-index: 1100;
   width: 250px;
@@ -316,7 +316,6 @@ body {
   transform: translate(-50%, 12px);
   transition: var(--transition);
 }
-
 .dropdown-menu::before {
   content: "";
   position: absolute;
