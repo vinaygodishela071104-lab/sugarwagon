@@ -53,6 +53,20 @@
   --secondary-btn-hover-bg: var(--primary);
   --secondary-btn-hover-color: var(--white);
   --secondary-btn-border: var(--primary);
+  /* =========================================
+   GLOBAL CONTAINER SYSTEM
+========================================= */
+
+--container-width: 1180px;
+--container-padding: 24px;
+
+/* Normal content/cards */
+--radius-content: 24px;
+--radius-content-sm: 16px;
+
+/* ONLY selected promotional/image sections */
+--radius-leaf: 80px 24px 80px 24px;
+--radius-leaf-reverse: 24px 80px 24px 80px;
 }
 
 body.dark-mode {
@@ -200,4 +214,264 @@ button {
   color: var(--secondary-btn-hover-color);
   border-color: var(--secondary-btn-hover-bg);
   transform: translateY(-3px);
+}
+/* =========================================
+   GLOBAL PAGE CONTAINER
+========================================= */
+
+.container,
+.page-container,
+.section-container {
+  width: min(
+    var(--container-width),
+    calc(100% - 48px)
+  );
+
+  margin-inline: auto;
+}
+
+
+/* =========================================
+   NORMAL CONTENT CONTAINERS
+========================================= */
+
+.content-card,
+.standard-card,
+.info-card,
+.event-card,
+.menu-card {
+  border-radius: var(--radius-content);
+}
+
+
+/* =========================================
+   LEAF STYLE
+   Use ONLY for selected image / promo areas
+========================================= */
+
+.leaf-container {
+  overflow: hidden;
+
+  border-radius: var(--radius-leaf);
+}
+
+.leaf-container--reverse {
+  overflow: hidden;
+
+  border-radius: var(--radius-leaf-reverse);
+}
+
+
+/* =========================================================
+   BUG 7 FIX — MINIMUM READABLE BRAND TEXT
+   Keep this at the very bottom of global.css
+========================================================= */
+
+/* ---------- DESKTOP / GLOBAL ---------- */
+
+.sugarwagon-brand .description-text,
+.header-brand .description-text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+}
+
+.sugarwagon-brand .brand-type,
+.header-brand .brand-type {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.footer-brand .description-text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+}
+
+.footer-brand .brand-type {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width: 480px) {
+
+  .sugarwagon-brand .description-text,
+  .header-brand .description-text {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .sugarwagon-brand .brand-type,
+  .header-brand .brand-type {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .footer-brand .description-text {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-brand .brand-type {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .sugarwagon-brand .description-text,
+  .header-brand .description-text {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .sugarwagon-brand .brand-type,
+  .header-brand .brand-type {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .footer-brand .description-text {
+    font-size: 12px;
+  }
+
+  .footer-brand .brand-type {
+    font-size: 12px;
+  }
+}
+
+
+/* ---------- 1024 × 600 SCREEN FIX ---------- */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  .sugarwagon-brand .description-text,
+  .header-brand .description-text {
+    font-size: 12px;
+  }
+
+  .sugarwagon-brand .brand-type,
+  .header-brand .brand-type {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   GLOBAL CONTAINER RESPONSIVENESS
+========================================================= */
+
+@media screen and (max-width: 767px) {
+  .container,
+  .page-container,
+  .section-container {
+    width: calc(100% - 32px);
+  }
+
+  .leaf-container {
+    border-radius: 50px 18px 50px 18px;
+  }
+
+  .leaf-container--reverse {
+    border-radius: 18px 50px 18px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container,
+  .page-container,
+  .section-container {
+    width: calc(100% - 28px);
+  }
+
+  .leaf-container {
+    border-radius: 38px 16px 38px 16px;
+  }
+
+  .leaf-container--reverse {
+    border-radius: 16px 38px 16px 38px;
+  }
+}
+
+
+/* =========================================================
+   FINAL FIX — FOOTER LOGO SAME SIZE AS HEADER
+========================================================= */
+
+/* Truck image */
+.site-footer .footer-logo .brand-logo {
+  width: 76px !important;
+  height: 76px !important;
+}
+
+/* Divider */
+.site-footer .footer-logo .logo-divider,
+.site-footer .footer-logo-divider {
+  height: 55px !important;
+}
+
+/* SugarWagon */
+.site-footer .footer-brand .brand-sugar,
+.site-footer .footer-brand .brand-wagon {
+  font-size: 23px !important;
+  line-height: 1.05 !important;
+  letter-spacing: -1px !important;
+}
+
+/* Main brand wrapper */
+.site-footer .footer-brand .brand-name {
+  padding: 3px 9px 18px !important;
+}
+
+/* Cotton Candy & Funnel Cake */
+.site-footer .footer-brand .description-text {
+  font-size: 7px !important;
+  letter-spacing: 1.15px !important;
+}
+
+/* If brand-type exists */
+.site-footer .footer-brand .brand-type {
+  font-size: 7px !important;
+  letter-spacing: 4px !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .site-footer .footer-logo .brand-logo {
+    width: 47px !important;
+    height: 47px !important;
+  }
+
+  .site-footer .footer-logo .logo-divider,
+  .site-footer .footer-logo-divider {
+    height: 36px !important;
+  }
+
+  .site-footer .footer-brand .brand-sugar,
+  .site-footer .footer-brand .brand-wagon {
+    font-size: 19px !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  .site-footer .footer-brand .brand-name {
+    padding: 2px 3px 12px !important;
+  }
 }
